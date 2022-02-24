@@ -1,0 +1,98 @@
+.app__work-portfolio {
+  display: flex;
+  flex-direction: column;
+
+  .app__work-img {
+    margin-top: 1rem;
+  }
+
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+}
+
+.head-title {
+  margin-top: 0.5em;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 550;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 1.75rem;
+  }
+
+  span {
+    color: var(--secondary-color);
+    font-weight: 550;
+    font-size: 2.2rem;
+    text-decoration: underline;
+    @media screen and (max-width: 1200px) {
+      font-size: 1.75rem;
+    }
+  }
+}
+
+.app__flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.app__work-small-portfolio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex: 1;
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+
+  .app__work-item {
+    max-width: 300px;
+    height: 400px;
+    margin: 1rem 1rem;
+  }
+}
+
+.sm-Img {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+}
+
+.app__work-filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin: 4rem 0.2rem;
+
+  .app__work-filter-item {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    color: #000;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 1s ease;
+    margin: 0.5rem;
+
+    &:hover {
+      background-color: var(--secondary-color);
+      color: #fff;
+    }
+
+    @media screen and (min-width: 2000px) {
+      padding: 1rem 2rem;
+      border-radus: 0.85rem;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+}

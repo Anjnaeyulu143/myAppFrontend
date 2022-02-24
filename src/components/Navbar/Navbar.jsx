@@ -16,7 +16,7 @@ export const Navbar = () => {
         <h1>Portfo<span>lio.</span></h1>
       </div>
       <ul className='app__navbar-links'>
-        {['home','about','contact','work','skills'].map((item) => (
+        {['home','about','contact','skills'].map((item) => (
           <li className='app__flex p-text' key={`link-${item}`}>
             <div/>
             <a href={`#${item}`}>{item}</a>
@@ -32,7 +32,7 @@ export const Navbar = () => {
                 transition={{duration:1,ease:'easeOut'}}
               >
                 <HiX onClick={() => setToggle(false)}/>
-                 <ul> {['home','about','contact','work','skills'].map((item) => (
+                 <ul> {['home','about','contact','skills'].map((item) => (
                   <li key={item}>
                       <a href={`#${item}`} onClick={() => setToggle(false)}>{item}</a>
                   </li>

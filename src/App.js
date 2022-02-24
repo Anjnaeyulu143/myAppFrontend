@@ -1,11 +1,10 @@
 import React from "react";
-import { Work } from "./container/Work/Work";
+import Work from "./container/Work/Work";
 import { Navbar } from "./components/Navbar/Navbar";
 import About from "./container/About/About";
-import { Footer } from "./container/Footer/Footer";
-import { Skills } from "./container/Skills/Skills";
+import Footer from "./container/Footer/Footer";
+
 import Header from "./container/Header/Header";
-import { Testimonial } from "./container/Testimonial/Testimonial";
 import "./App.scss";
 
 const App = () => {
@@ -14,10 +13,8 @@ const App = () => {
       <Navbar />
       <Header />
       <About />
-      <Footer />
-      <Skills />
-      <Testimonial />
       <Work />
+      <Footer />
     </div>
   );
 };
